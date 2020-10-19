@@ -1,0 +1,17 @@
+birthdays = {'ming':'0903','peng':'0000','zhen':'0000','yuan':'0000','feng':'0000'}
+
+while True:
+    print('Enter a name: ')
+    name = input()
+
+    if name == '':
+        break
+
+    if name in birthdays:
+        print(birthdays[name] + ' is the birthdays of ' + name)
+    else:
+        print('I do not have birthdays informationn for' + name)
+        print('when is their birthdays?')
+        newbd = input()
+        birthdays[name] = newbd
+        print('Birthdays database updated')
